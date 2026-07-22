@@ -53,3 +53,33 @@ Living means the document is continually updated and never finished, for example
 
 ## QIP workflow
 
+```
+Idea -> Draft -> Review -> Last Call -> Accepted -> Final
+                                     \-> Withdrawn / Stagnant
+```
+
+Discuss the idea publicly through official Quantova channels before writing.
+
+Draft the QIP using the [template](qip-template.md) and open a pull request.
+
+An editor checks formatting and metadata and assigns a number.
+
+The QIP advances through Review and Last Call as consensus forms.
+
+Core proposals that are Accepted are scheduled into a network upgrade and become Final once live on the canonical network.
+
+## What belongs in a QIP
+
+A successful QIP contains, at minimum, a preamble with metadata, an abstract, a motivation, a technical specification, a rationale, backward compatibility notes, security considerations, and for Core and application standards a reference to a test or reference implementation where applicable.
+
+## QIP editors
+
+Editors handle the administrative and editorial parts of the process, assigning numbers, checking structure and formatting, and merging. Editors do not pass judgment on the merits of a proposal.
+
+## History
+
+This document describes a standard improvement proposal workflow adapted for Quantova's post quantum context. It is a Living document and will be revised as the process matures.
+
+## Copyright
+
+Copyright 2026 Quantova Inc. See [LICENSE](LICENSE).
