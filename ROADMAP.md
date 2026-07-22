@@ -52,3 +52,22 @@ Public gateway and archive infrastructure for indexers and applications.
 
 ## Phase 4, Post Mainnet Evolution, research tracked
 
+These are research and improvement directions, not commitments. Each will be proposed and discussed through the [QIP process](qip-1.md) if and when it matures.
+
+Committee and sortition refinements as the validator set grows.
+
+Additional NIST post quantum schemes as standards evolve.
+
+QVM and Quanta tooling enhancements driven by developer feedback.
+
+Expanded QAsset and QCollectible standards and QNS features.
+
+## How improvements are proposed
+
+Once the network is live and the community is contributing, changes follow the [QIP process](qip-1.md). Anyone can draft a QIP using the [template](qip-template.md). Until then, this repository is the public record of the architecture already built and the roadmap toward mainnet.
+
+## Links
+
+Website https://quantova.org
+
+Quantova, post quantum infrastructure built from scratch. Roadmap is directional and subject to change.
