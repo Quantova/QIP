@@ -16,7 +16,7 @@ QORUS consensus. A committee is sampled each round to attest to the proposed blo
 
 The QVM, a deterministic register machine that runs compiled containers, with the Quanta smart contract language, designed so that whole classes of vulnerability are caught at compile time.
 
-The QCore SDK family, QCore.rs the Rust core, QCore.js published on npm as @qunatovainc/qcore, and QCore.py.
+The QCore SDK family, QCore.rs the Rust core, QCore.js published on npm as @quantovainc/qcore, and QCore.py.
 
 The HTTP gateway, an HTTP POST to /v1/<method> with a flat JSON body, and the public testnet faucet that distributes TQTOV.
 

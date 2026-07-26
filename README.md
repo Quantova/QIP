@@ -34,7 +34,7 @@ Cryptography is Q-Crypto, Quantova's implementation of the NIST post quantum sta
 
 Addresses are Q1 bech32m. The asset is QTOV and its base unit is the Quon, where one QTOV is one million Quon. The testnet asset is TQTOV.
 
-The gateway is an HTTP POST to /v1/<method> with a flat JSON body. The client SDK is the QCore family, QCore.rs the Rust core, QCore.js published on npm as @qunatovainc/qcore, and QCore.py.
+The gateway is an HTTP POST to /v1/<method> with a flat JSON body. The client SDK is the QCore family, QCore.rs the Rust core, QCore.js published on npm as @quantovainc/qcore, and QCore.py.
 
 The smart contract language is Quanta, compiled to QVM containers and designed so that whole classes of vulnerability are caught at compile time. The fungible token standard is QAsset and the non fungible standard is QCollectible. The name service is QNS with domains under a capital Q top level domain.
 
