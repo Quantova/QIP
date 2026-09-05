@@ -25,7 +25,7 @@ The reference contract is examples/QAsset.qs in the Quanta contract language. It
 ```
 import { Map } from "quantova/stdlib";
 contract QAsset {
-  asset QRC;
+  asset QAT;
   state {
     owner: Q_Address;
     total_supply: u128;
@@ -36,7 +36,7 @@ contract QAsset {
     total_supply = deploy_params.initial_supply;
   }
   entry mint(order: MintOrder signed by owner)
-    mints QRC
+    mints QAT
     writes(total_supply, balances)
   {
     total_supply += order.amount;
@@ -56,7 +56,7 @@ contract QAsset {
 }
 ```
 
-The contract declares an asset named QRC with `asset QRC`. It holds three pieces of state. The `owner` is a Q_Address that names the account allowed to mint. The `total_supply` is a u128 that tracks how many units exist. The `balances` field is a Map from Q_Address to u128 that records the balance of every holder. At genesis the owner and the starting supply are read from the deploy parameters the deployer supplied when the container was placed on chain, which the QCore.rs deploy helper frames as an owner address and an initial supply behind a sentinel.
+The contract declares an asset named QAT with `asset QAT`. It holds three pieces of state. The `owner` is a Q_Address that names the account allowed to mint. The `total_supply` is a u128 that tracks how many units exist. The `balances` field is a Map from Q_Address to u128 that records the balance of every holder. At genesis the owner and the starting supply are read from the deploy parameters the deployer supplied when the container was placed on chain, which the QCore.rs deploy helper frames as an owner address and an initial supply behind a sentinel.
 
 Each piece of state resolves to a thirty two byte storage key. A scalar field such as the total supply resolves to a scalar slot key. A balance for a holder resolves to a map key the QVM derives by hashing the map's domain tag together with the holder address. The QCore.rs contract helpers rebuild these same keys, so a client reads the total supply or a holder balance by reconstructing the key and reading the value the node reports for it, and a key that has never been written reads as zero. In the reference contract a balance and the total supply are declared as u128. The exact stored width for a u128 value is among the details still being finalized for this Draft, and the current QCore.rs read helper returns a word sized value for a slot key.
 
