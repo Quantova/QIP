@@ -32,7 +32,7 @@ The ML-DSA-65 signature binds the whole body. The digest it signs is taken over 
 
 The transaction id is SHA3-256 over the entire encoded wrapper, which is the body, the scheme byte, and the signature together, rendered as a Bech32m string under the transaction human readable part so that it begins `QTX1`. Because the id covers the signature as well as the body, two wrappers that differ in any field or in the signature carry different ids, and an id round trips through its rendered form.
 
-The chain id is folded into the signature by being a field of the signed body. The chain id of a network is derived from its display name by hashing the name with SHA3-256 and taking the leading eight bytes as a big endian integer, giving a sixty four bit identifier. The network names are `Q-dev-net-1` for the local development network, `Q3` for the testnet, and `Q1` for mainnet, each with its fixed chain id constant. A signature produced for one chain id does not verify against the same body carrying a different chain id, so a transaction signed for one Quantova network cannot be replayed onto another.
+The chain id is folded into the signature by being a field of the signed body. The chain id of a network is derived from its display name by hashing the name with SHA3-256 and taking the leading eight bytes as a big endian integer, giving a sixty four bit identifier. The network names are `Q-dev-net-1` for the local development network, `Q-test-net-1` for the testnet, and `Q-main-net-1` for mainnet, each with its fixed chain id constant. A signature produced for one chain id does not verify against the same body carrying a different chain id, so a transaction signed for one Quantova network cannot be replayed onto another.
 
 ## Rationale
 

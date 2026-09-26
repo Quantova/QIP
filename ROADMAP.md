@@ -46,7 +46,7 @@ Governance activation for upgrade by vote.
 
 Canonical mainnet genesis with signed releases.
 
-Native QTOV in production, with staking and validator rewards live.
+Native QTOV in production, with staking live and validator rewards starting after the 365 day mainnet blackout.
 
 Public gateway and archive infrastructure for indexers and applications.
 

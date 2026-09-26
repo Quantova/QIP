@@ -48,7 +48,7 @@ Three caps bound issuance and payout. Each asset carries a global supply cap and
 
 ### Freeze and pool migration
 
-Any account that is not blacklisted can freeze the bridge by posting a bond, and the freeze halts the bridge the block it lands. While the bridge is frozen the mint, the exit burn, the settle, the slash, and any call to the bridge gateway are all refused. A good faith freeze expires after its duration and returns the bond to the depositor, and a cooldown blocks an immediate refreeze. A freeze judged to be in bad faith is lifted early by a governance vote or by the guardian caucus, and that early lift slashes the bond to the treasury. Over a frozen bridge a governance migration vote can move the pool, routing all asset custody from the old pool vault to a new vault and repointing the pool to it. The migration is refused unless the bridge is frozen.
+Any account that is not blacklisted can freeze the bridge by posting a bond, and the freeze halts the bridge the block it lands. While the bridge is frozen the mint, the exit burn, the settle, the slash, and any call to the bridge gateway are all refused. A freeze lasts up to seven days. The depositor may lift it early and take the bond back, while a freeze that runs to expiry, or that is lifted early by a governance vote or by the guardian caucus, forfeits the bond to the treasury. A one day cooldown after any lift blocks an immediate refreeze. Over a frozen bridge a governance migration vote can move the pool, routing all asset custody from the old pool vault to a new vault and repointing the pool to it. The migration is refused unless the bridge is frozen.
 
 ### Default gating
 

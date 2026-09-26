@@ -153,7 +153,7 @@ An accepted transaction reports its state, `fresh` for a newly seen transaction 
 {"verdict": "accepted", "state": "fresh", "tx_id": "..."}
 ```
 
-A rejected transaction reports a reason code. The reasons are `unknown_sender`, `unsupported_scheme`, `bad_signature`, `bad_nonce`, `bad_call`, `self_transfer`, `meter_limit_too_low`, `fee_too_low`, `insufficient_funds`, `wrong_chain`, `pool_full`, `sender_queue_full`, `rate_limited`, and `malformed`. A `bad_nonce` rejection also reports the `expected` and the `got` nonce.
+A rejected transaction reports a reason code. The reasons are `unknown_sender`, `unsupported_scheme`, `bad_signature`, `bad_nonce`, `bad_call`, `self_transfer`, `zero_transfer`, `meter_limit_too_low`, `fee_too_low`, `insufficient_funds`, `wrong_chain`, `pool_full`, `sender_queue_full`, `rate_limited`, and `malformed`. A `bad_nonce` rejection also reports the `expected` and the `got` nonce.
 
 ```
 {"verdict": "rejected", "reason": "bad_nonce", "expected": 4, "got": 2}
