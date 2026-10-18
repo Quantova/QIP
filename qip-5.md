@@ -60,7 +60,7 @@ Takes no argument. Reports the chain identity and the current fee schedule.
 
 ```
 {
-  "chain_id": "Q-test-net-1",
+  "chain_id": "Q-test-net-01",
   "genesis_hash": "...",
   "head_height": 1024,
   "asset": "QTOV",
